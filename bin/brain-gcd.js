@@ -36,7 +36,7 @@ const mainFunction = () => {
     console.log(`Question: ${first} ${two}`);
     const answer = readlineSync.question('Your answer: ');
     if (Number(answer) === Number(checkNOD(first, two))) {
-      trueCount++;
+      trueCount += 1;
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${Number(checkNOD(first, two))}'.`);
