@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
 const getQuestion = () => Math.floor(Math.random() * (20 - 1 + 1)) + 1;

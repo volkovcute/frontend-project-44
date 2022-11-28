@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
 const getNumber = () => Math.floor(Math.random() * (25 - 1 + 1)) + 1;
