@@ -23,6 +23,7 @@ const mainFunction = () => {
         console.log('Correct!');
       } else {
         console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
+        return console.log(`Let's try again, ${name}!`);
       }
     } else if (answer === 'no') {
       if (Number(q) % 2 !== 0) {
@@ -30,9 +31,11 @@ const mainFunction = () => {
         console.log('Correct!');
       } else {
         console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");
+        return console.log(`Let's try again, ${name}!`);
       }
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${Number(q) % 2 === 0 ? 'yes' : 'no'}'`);
+      return console.log(`Let's try again, ${name}!`);
     }
   }
   return true;

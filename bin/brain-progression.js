@@ -20,10 +20,10 @@ const mainFunction = () => {
     const answer = readlineSync.question('Your answer: ');
     if (Number(answer) !== Number(trueVar)) {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueVar}'.`);
-    } else {
-      trueCount++;
-      console.log('Correct!');
+      return console.log(`Let's try again, ${name}!`);
     }
+    trueCount++;
+    console.log('Correct!');
   }
   return true;
 };

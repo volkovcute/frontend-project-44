@@ -35,6 +35,7 @@ const mainFunction = () => {
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isPrime(q)}'.`);
+      return console.log(`Let's try again, ${name}!`);
     }
   }
   return true;
