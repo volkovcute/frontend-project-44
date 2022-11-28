@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 import readlineSync from 'readline-sync';
 
+// eslint-disable-next-line max-len
 const arithmeticProgression = (n, lim) => Array.from({ length: Math.ceil(lim / n) }, (_, i) => (i + 1) * n);
 
 const mainFunction = () => {
@@ -13,6 +14,7 @@ const mainFunction = () => {
     if (trueCount >= 3) {
       return console.log(`Congratulations, ${name}!`);
     }
+    // eslint-disable-next-line max-len
     const question = arithmeticProgression(Math.floor(Math.random() * (20 - 2)) + 2, Math.floor(Math.random() * (200 - 50)) + 50);
     const trueVar = question[3];
     question[3] = '..';
@@ -22,7 +24,7 @@ const mainFunction = () => {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${trueVar}'.`);
       return console.log(`Let's try again, ${name}!`);
     }
-    trueCount++;
+    trueCount += 1;
     console.log('Correct!');
   }
   return true;

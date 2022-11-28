@@ -19,7 +19,7 @@ const mainFunction = () => {
 
     if (answer === 'yes') {
       if (Number(q) % 2 === 0) {
-        trueCount++;
+        trueCount += 1;
         console.log('Correct!');
       } else {
         console.log("'yes' is wrong answer ;(. Correct answer was 'no'.");
@@ -27,7 +27,7 @@ const mainFunction = () => {
       }
     } else if (answer === 'no') {
       if (Number(q) % 2 !== 0) {
-        trueCount++;
+        trueCount += 1;
         console.log('Correct!');
       } else {
         console.log("'no' is wrong answer ;(. Correct answer was 'yes'.");

@@ -4,7 +4,7 @@ import readlineSync from 'readline-sync';
 const getQuestion = () => Math.floor(Math.random() * (20 - 1 + 1)) + 1;
 
 function isPrime(num) {
-  for (let i = 2; i < num; i++) { if (num % i === 0) return false; }
+  for (let i = 2; i < num; i += 1) { if (num % i === 0) return false; }
   return num > 1;
 }
 
@@ -31,7 +31,7 @@ const mainFunction = () => {
     }
 
     if (isPrime(q) === answer) {
-      trueCount++;
+      trueCount += 1;
       console.log('Correct!');
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was '${isPrime(q)}'.`);
